@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mivora - Eco Sustainability</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ========== HEADER ========== -->
+    <header class="header" id="header">
+        <div class="header-inner">
+            <a href="#" class="logo">
+                <img src="images/logo.svg" alt="Mivora" class="logo-img">
+            </a>
+            <nav class="nav-pill" id="navPill">
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="nav-link dropdown-toggle">Pages
+                            <svg width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#case-studies">Case Studies</a></li>
+                            <li><a href="#blog">Blog</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#case-studies" class="nav-link">Case Studies</a></li>
+                    <li><a href="#blog" class="nav-link">Blog</a></li>
+                </ul>
+            </nav>
+            <a href="#contact" class="btn btn-primary nav-cta">Contact us</a>
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ========== HERO (video background) ========== -->
+    <section class="hero">
+        <div class="hero-video-bg">
+            <video autoplay muted loop playsinline>
+                <source src="https://videos.pexels.com/video-files/5548025/5548025-uhd_2560_1440_30fps.mp4" type="video/mp4">
+            </video>
+            <div class="hero-overlay"></div>
+        </div>
+        <img src="images/hero-left-shape.svg" alt="" class="hero-shape hero-shape-left">
+        <img src="images/hero-right-shape.svg" alt="" class="hero-shape hero-shape-right">
+        <div class="container hero-container">
+            <div class="hero-content" data-animate>
+                <div class="hero-badge">
+                    <img src="images/hero-shape.svg" alt="" class="hero-badge-icon">
+                    <span>Eco-Supply</span>
+                </div>
+                <h1 class="hero-title">The green pulse of<br>modern logistics</h1>
+                <p class="hero-subtitle">Eco-friendly, efficient, and future-ready supply chain solutions that reduce your carbon footprint while maximizing business efficiency.</p>
+                <a href="#contact" class="btn btn-primary btn-lg">Get a green quote</a>
+            </div>
+
+            <!-- Featured case study card overlapping hero -->
+            <div class="hero-case-card" data-animate>
+                <div class="hero-case-image">
+                    <img src="images/cases/case-big-05.avif" alt="Zero waste city">
+                </div>
+                <div class="hero-case-content">
+                    <h3>How one city achieved zero waste goals</h3>
+                    <div class="hero-case-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">50K</span>
+                            <span class="stat-label">Planted trees to restore biodiversity</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">200+</span>
+                            <span class="stat-label">Reduction in logistics costs</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CLIENTS MARQUEE ========== -->
+    <section class="clients">
+        <div class="clients-track">
+            <div class="clients-slide">
+                <img src="images/clients/client-01.svg" alt="Client">
+                <img src="images/clients/client-02.svg" alt="Client">
+                <img src="images/clients/client-03.svg" alt="Client">
+                <img src="images/clients/client-04.svg" alt="Client">
+                <img src="images/clients/client-05.svg" alt="Client">
+                <img src="images/clients/client-06.svg" alt="Client">
+            </div>
+            <div class="clients-slide">
+                <img src="images/clients/client-01.svg" alt="Client">
+                <img src="images/clients/client-02.svg" alt="Client">
+                <img src="images/clients/client-03.svg" alt="Client">
+                <img src="images/clients/client-04.svg" alt="Client">
+                <img src="images/clients/client-05.svg" alt="Client">
+                <img src="images/clients/client-06.svg" alt="Client">
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== ABOUT ========== -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-top" data-animate>
+                <div class="section-badge">
+                    <img src="images/icons/about-title-icon.svg" alt="">
+                    <span>Driving change</span>
+                </div>
+                <h2 class="about-title">At Eco-Supply Transportation, we are redefining logistics by integrating sustainability into every mile.</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-images" data-animate>
+                    <div class="about-img-main">
+                        <img src="images/about/about-01.webp" alt="Eco transport">
+                    </div>
+                    <div class="about-img-secondary">
+                        <img src="images/about/about-02.webp" alt="Sustainability">
+                        <img src="images/about/about-03.webp" alt="Green logistics">
+                    </div>
+                </div>
+                <div class="about-content" data-animate>
+                    <div class="about-features">
+                        <div class="about-feature-card">
+                            <img src="images/about/about-icon-01.svg" alt="">
+                            <div>
+                                <h4>Optimized routes</h4>
+                                <p>Data-driven route planning for maximum efficiency and minimum emissions.</p>
+                            </div>
+                        </div>
+                        <div class="about-feature-card">
+                            <img src="images/about/about-icon-02.svg" alt="">
+                            <div>
+                                <h4>Lower emissions</h4>
+                                <p>Reducing carbon output across every delivery and shipment.</p>
+                            </div>
+                        </div>
+                        <div class="about-feature-card">
+                            <img src="images/about/about-icon-03.svg" alt="">
+                            <div>
+                                <h4>Sustainable logistics</h4>
+                                <p>End-to-end green supply chain management for a better future.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-outline">More about us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== INDUSTRIES ========== -->
+    <section class="industries" id="industries">
+        <div class="container">
+            <div class="section-header" data-animate>
+                <h2 class="section-title">Industries we serve</h2>
+                <p class="section-subtitle">Building smarter, cleaner supply chains across diverse industries</p>
+            </div>
+            <div class="industries-tabs" data-animate>
+                <div class="tab-buttons">
+                    <button class="tab-btn active" data-tab="retail">
+                        <img src="images/tabs/tab-icon-01.svg" alt="">
+                        <span>Retail & E-commerce</span>
+                    </button>
+                    <button class="tab-btn" data-tab="manufacturing">
+                        <img src="images/tabs/tab-icon-02.svg" alt="">
+                        <span>Manufacturing</span>
+                    </button>
+                    <button class="tab-btn" data-tab="healthcare">
+                        <img src="images/tabs/tab-icon-03.svg" alt="">
+                        <span>Healthcare & Pharma</span>
+                    </button>
+                    <button class="tab-btn" data-tab="food">
+                        <img src="images/tabs/tab-icon-04.svg" alt="">
+                        <span>Food & Beverage</span>
+                    </button>
+                    <button class="tab-btn" data-tab="tech">
+                        <img src="images/tabs/tab-icon-05.svg" alt="">
+                        <span>Technology & Electronics</span>
+                    </button>
+                </div>
+                <div class="tab-panels">
+                    <div class="tab-panel active" id="tab-retail">
+                        <div class="tab-panel-grid">
+                            <div class="tab-panel-image">
+                                <img src="images/tabs/tab-image-01.webp" alt="Retail logistics">
+                            </div>
+                            <div class="tab-panel-content">
+                                <h3>Retail & E-commerce</h3>
+                                <p>Eco-Supply Transportation supports retailers and e-commerce businesses in building greener last-mile delivery networks.</p>
+                                <ul class="tab-features">
+                                    <li><img src="images/icons/industries-list-icon.svg" alt=""> Zero-emission last-mile delivery using electric and hybrid vehicles.</li>
+                                    <li><img src="images/icons/industries-list-icon.svg" alt=""> Eco-friendly packaging logistics to reduce waste.</li>
+                                    <li><img src="images/icons/industries-list-icon.svg" alt=""> Optimized route planning for faster, greener deliveries.</li>
+                                    <li><img src="images/icons/industries-list-icon.svg" alt=""> Reverse logistics support for sustainable returns management.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-panel" id="tab-manufacturing">
+                        <div class="tab-panel-grid">
+                            <div class="tab-panel-image">
+                                <img src="images/tabs/tab-image-02.webp" alt="Manufacturing">
+                            </div>
+                            <div class="tab-panel-content">
+                                <h3>Manufacturing</h3>
+                                <p>Eco-Supply Transportation helps manufacturers lower their carbon footprint through sustainable logistics and supply chain solutions.</p>
+                                <ul class="tab-features">
+                                    <li><img src="images/icons/industries-list-icon.svg" alt=""> Freight consolidation to reduce emissions and transportation costs.</li>
+                                    <li><img src="images/icons/industries-list-icon.svg" alt=""> Use of electric trucks for short-haul and inter-facility transfers.</li>
+                                    <li><img src="images/icons/industries-list-icon.svg" alt=""> Smart inventory transfers based on energy-efficient schedules.</li>
+                                    <li><img src="images/icons/industries-list-icon.svg" alt=""> Waste-reducing return logistics for defective or excess products.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-panel" id="tab-healthcare">
+                        <div class="tab-panel-grid">
+                            <div class="tab-panel-image">
+                                <img src="images/tabs/tab-image-03.webp" alt="Healthcare">
+                            </div>
+                            <div class="tab-panel-content">
+                                <h3>Healthcare & Pharma</h3>
+                                <p>We provide sustainable transportation options tailored to the critical needs of the healthcare and pharmaceutical sectors.</p>
+                                <ul class="tab-features">
+                                    <li><img src="images/icons/industries-list-icon.svg" alt=""> Temperature-controlled electric vehicles for sensitive shipments.</li>
+                                    <li><img src="images/icons/industries-list-icon.svg" alt=""> Safe disposal logistics for expired or unused medical supplies.</li>
+                                    <li><img src="images/icons/industries-list-icon.svg" alt=""> Reduced-emission transport of lab samples and vaccines.</li>
+                                    <li><img src="images/icons/industries-list-icon.svg" alt=""> Route optimization for time-critical medical deliveries.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-panel" id="tab-food">
+                        <div class="tab-panel-grid">
+                            <div class="tab-panel-image">
+                                <img src="images/tabs/tab-image-04.webp" alt="Food">
+                            </div>
+                            <div class="tab-panel-content">
+                                <h3>Food & Beverage</h3>
+                                <p>Delivering freshness with sustainability in mind — Eco-Supply transforms food logistics into a greener process.</p>
+                                <ul class="tab-features">
+                                    <li><img src="images/icons/industries-list-icon.svg" alt=""> Refrigerated electric vehicles to maintain cold chain compliance.</li>
+                                    <li><img src="images/icons/industries-list-icon.svg" alt=""> Local sourcing and distribution networks to cut down on transport miles.</li>
+                                    <li><img src="images/icons/industries-list-icon.svg" alt=""> Compostable packaging supply and logistics support.</li>
+                                    <li><img src="images/icons/industries-list-icon.svg" alt=""> Eco-friendly logistics for restaurants, grocers, and meal services.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-panel" id="tab-tech">
+                        <div class="tab-panel-grid">
+                            <div class="tab-panel-image">
+                                <img src="images/tabs/tab-image-05.webp" alt="Technology">
+                            </div>
+                            <div class="tab-panel-content">
+                                <h3>Technology & Electronics</h3>
+                                <p>We support the tech industry in minimizing its environmental impact through innovative and clean logistics.</p>
+                                <ul class="tab-features">
+                                    <li><img src="images/icons/industries-list-icon.svg" alt=""> Low-emission transport of high-value electronics and parts.</li>
+                                    <li><img src="images/icons/industries-list-icon.svg" alt=""> Secure, sustainable e-waste and battery recycling logistics.</li>
+                                    <li><img src="images/icons/industries-list-icon.svg" alt=""> Green packaging and reverse logistics for device returns.</li>
+                                    <li><img src="images/icons/industries-list-icon.svg" alt=""> Emission tracking and reporting tools for supply chain transparency.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== SERVICES (carousel) ========== -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="services-header" data-animate>
+                <div>
+                    <div class="section-badge">
+                        <img src="images/icons/about-title-icon.svg" alt="">
+                        <span>Our services</span>
+                    </div>
+                    <h2 class="section-title">Clean mobility & supply chain services</h2>
+                </div>
+                <div class="services-arrows">
+                    <button class="arrow-btn" id="servPrev"><img src="images/icons/left-arrow.svg" alt="Previous"></button>
+                    <button class="arrow-btn" id="servNext"><img src="images/icons/right-arrow.svg" alt="Next"></button>
+                </div>
+            </div>
+        </div>
+        <div class="services-carousel" id="servicesCarousel" data-animate>
+            <div class="service-card">
+                <div class="service-top">
+                    <img src="images/icons/flower-icon.svg" alt="" class="service-icon-sm">
+                    <h3 class="service-title">Eco-friendly transportation</h3>
+                    <p class="service-desc">We offer responsible logistics that minimize pollution and maximize operational efficiency.</p>
+                    <a href="#" class="btn btn-text">View detail <span>&rarr;</span></a>
+                </div>
+                <div class="service-bottom">
+                    <img src="images/services/service-01.svg" alt="Eco transport" class="service-big-icon">
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="service-top">
+                    <img src="images/icons/truck-icon.svg" alt="" class="service-icon-sm">
+                    <h3 class="service-title">Green freight solution</h3>
+                    <p class="service-desc">Our Green Freight Solution is designed to help businesses minimize their environmental impact.</p>
+                    <a href="#" class="btn btn-text">View detail <span>&rarr;</span></a>
+                </div>
+                <div class="service-bottom">
+                    <img src="images/services/service-02.svg" alt="Green freight" class="service-big-icon">
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="service-top">
+                    <img src="images/icons/location-icon.svg" alt="" class="service-icon-sm">
+                    <h3 class="service-title">Intelligent route optimization</h3>
+                    <p class="service-desc">Cut down on miles and emissions through data-driven route optimization.</p>
+                    <a href="#" class="btn btn-text">View detail <span>&rarr;</span></a>
+                </div>
+                <div class="service-bottom">
+                    <img src="images/services/service-03.svg" alt="Route optimization" class="service-big-icon">
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="service-top">
+                    <img src="images/icons/fleet-icon.svg" alt="" class="service-icon-sm">
+                    <h3 class="service-title">Fleet management</h3>
+                    <p class="service-desc">Eco-focused fleet operations for better sustainability control.</p>
+                    <a href="#" class="btn btn-text">View detail <span>&rarr;</span></a>
+                </div>
+                <div class="service-bottom">
+                    <img src="images/services/service-04.svg" alt="Fleet management" class="service-big-icon">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== WHY CHOOSE US ========== -->
+    <section class="why-us" id="why-us">
+        <div class="container">
+            <div class="section-header" data-animate>
+                <h2 class="section-title">Why choose us</h2>
+                <p class="section-subtitle">Why Mivora eco-supply is the smarter choice</p>
+            </div>
+            <div class="why-us-grid">
+                <div class="why-content" data-animate>
+                    <div class="why-card">
+                        <div class="why-number">01</div>
+                        <h3>Innovative green technology</h3>
+                        <p>We utilize advanced route optimization, carbon tracking, and intelligent fleet management tools to enhance your logistics while ensuring a measurable reduction in your environmental footprint.</p>
+                    </div>
+                    <div class="why-card">
+                        <div class="why-number">02</div>
+                        <h3>Customized logistics solutions</h3>
+                        <p>We tailor our eco-supply transportation strategies to align perfectly with your industry needs, operational goals, and sustainability commitments.</p>
+                    </div>
+                    <div class="why-card">
+                        <div class="why-number">03</div>
+                        <h3>Commitment to future</h3>
+                        <p>We help businesses future-proof their supply chains by integrating sustainable logistics practices today.</p>
+                    </div>
+                    <a href="#" class="btn btn-outline">Meet our team</a>
+                </div>
+                <div class="why-image" data-animate>
+                    <img src="images/why-choose-image.webp" alt="Why choose us">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== STATS ========== -->
+    <section class="stats" data-animate>
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Sustainability in numbers</h2>
+                <p class="section-subtitle">Driving measurable change across every shipment, route, and partnership.</p>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <img src="images/counter/arrow.svg" alt="" class="stat-icon">
+                    <span class="stat-value">40%</span>
+                    <span class="stat-text">Lower CO2 Emissions</span>
+                </div>
+                <div class="stat-card">
+                    <img src="images/counter/counter-icon-02.svg" alt="" class="stat-icon">
+                    <span class="stat-value">35%</span>
+                    <span class="stat-text">Fuel cost saving</span>
+                </div>
+                <div class="stat-card">
+                    <img src="images/counter/counter-icon-03.svg" alt="" class="stat-icon">
+                    <span class="stat-value">500+</span>
+                    <span class="stat-text">Tons of CO2 saved annually</span>
+                </div>
+                <div class="stat-card">
+                    <img src="images/counter/counter-icon-04.svg" alt="" class="stat-icon">
+                    <span class="stat-value">1K</span>
+                    <span class="stat-text">Smart routes optimized monthly</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== TECHNOLOGY ========== -->
+    <section class="technology" id="technology">
+        <div class="container">
+            <div class="tech-grid">
+                <div class="tech-content" data-animate>
+                    <h2 class="tech-title">Low-emission transportation powered by innovation</h2>
+                    <p class="tech-subtitle">At Eco-Supply Transportation, our fleet and technology go hand-in-hand to deliver smart, sustainable, and future-ready logistics solutions.</p>
+                    <ul class="tech-features">
+                        <li><span class="tech-check">&#10003;</span> Electric & Hybrid vehicles</li>
+                        <li><span class="tech-check">&#10003;</span> Low-Emission freight solutions</li>
+                        <li><span class="tech-check">&#10003;</span> Last-mile electric delivery hubs</li>
+                        <li><span class="tech-check">&#10003;</span> Real-time tracking & monitoring</li>
+                        <li><span class="tech-check">&#10003;</span> AI-Powered route optimization</li>
+                    </ul>
+                    <a href="#services" class="btn btn-primary">Explore service</a>
+                </div>
+                <div class="tech-image" data-animate>
+                    <img src="images/tech/technology-image.png" alt="Technology">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== TESTIMONIALS ========== -->
+    <section class="testimonials" id="testimonials">
+        <div class="testimonials-bg">
+            <img src="images/about/about-01.webp" alt="">
+        </div>
+        <div class="container">
+            <div class="section-header section-header-light" data-animate>
+                <h2 class="section-title">What our eco-supply clients say</h2>
+                <p class="section-subtitle">Trusted by forward-thinking businesses for sustainable logistics excellence</p>
+            </div>
+            <div class="testimonials-layout" data-animate>
+                <!-- Left column -->
+                <div class="testimonials-col testimonials-col-left">
+                    <div class="testimonial-card">
+                        <div class="testimonial-quote-icon">
+                            <svg width="32" height="24" viewBox="0 0 32 24" fill="none"><path d="M0 24V14.4C0 11.7 0.5 9.3 1.5 7.2C2.5 5.1 3.9 3.3 5.7 1.8C7.5 0.6 9.6 0 12 0L13.2 4.8C11.1 5.1 9.4 5.9 8.1 7.2C6.8 8.5 6.1 10 6 11.7H12V24H0ZM20 24V14.4C20 11.7 20.5 9.3 21.5 7.2C22.5 5.1 23.9 3.3 25.7 1.8C27.5 0.6 29.6 0 32 0L33.2 4.8C31.1 5.1 29.4 5.9 28.1 7.2C26.8 8.5 26.1 10 26 11.7H32V24H20Z" fill="#7eea57" opacity="0.2"/></svg>
+                        </div>
+                        <p class="testimonial-text">"Eco-Supply helped us cut logistics emissions while ensuring timely deliveries. A true sustainability partner."</p>
+                        <div class="testimonial-author">
+                            <img src="images/testimonials/testimonial-01.webp" alt="Emma Carter" class="author-avatar">
+                            <div class="author-info">
+                                <strong>Emma Carter</strong>
+                                <span>Logistics Manager</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Connector SVG curve -->
+                    <div class="testimonial-connector-wrap">
+                        <img src="images/testimonials/testimonial-shape.svg" alt="" class="testimonial-connector">
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-quote-icon">
+                            <svg width="32" height="24" viewBox="0 0 32 24" fill="none"><path d="M0 24V14.4C0 11.7 0.5 9.3 1.5 7.2C2.5 5.1 3.9 3.3 5.7 1.8C7.5 0.6 9.6 0 12 0L13.2 4.8C11.1 5.1 9.4 5.9 8.1 7.2C6.8 8.5 6.1 10 6 11.7H12V24H0ZM20 24V14.4C20 11.7 20.5 9.3 21.5 7.2C22.5 5.1 23.9 3.3 25.7 1.8C27.5 0.6 29.6 0 32 0L33.2 4.8C31.1 5.1 29.4 5.9 28.1 7.2C26.8 8.5 26.1 10 26 11.7H32V24H20Z" fill="#7eea57" opacity="0.2"/></svg>
+                        </div>
+                        <p class="testimonial-text">"Thanks to Eco-Supply Transportation, our last-mile deliveries are now 100% emission-free."</p>
+                        <div class="testimonial-author">
+                            <img src="images/testimonials/testimonial-03.webp" alt="James Turner" class="author-avatar">
+                            <div class="author-info">
+                                <strong>James Turner</strong>
+                                <span>Green Advisor</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Right column (offset/staggered down) -->
+                <div class="testimonials-col testimonials-col-right">
+                    <div class="testimonial-card">
+                        <div class="testimonial-quote-icon">
+                            <svg width="32" height="24" viewBox="0 0 32 24" fill="none"><path d="M0 24V14.4C0 11.7 0.5 9.3 1.5 7.2C2.5 5.1 3.9 3.3 5.7 1.8C7.5 0.6 9.6 0 12 0L13.2 4.8C11.1 5.1 9.4 5.9 8.1 7.2C6.8 8.5 6.1 10 6 11.7H12V24H0ZM20 24V14.4C20 11.7 20.5 9.3 21.5 7.2C22.5 5.1 23.9 3.3 25.7 1.8C27.5 0.6 29.6 0 32 0L33.2 4.8C31.1 5.1 29.4 5.9 28.1 7.2C26.8 8.5 26.1 10 26 11.7H32V24H20Z" fill="#7eea57" opacity="0.2"/></svg>
+                        </div>
+                        <p class="testimonial-text">"Highly recommend it for businesses serious about going green. The team is professional and truly eco-conscious."</p>
+                        <div class="testimonial-author">
+                            <img src="images/testimonials/testimonial-02.webp" alt="Ethan Wilson" class="author-avatar">
+                            <div class="author-info">
+                                <strong>Ethan Wilson</strong>
+                                <span>Supply Head</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Connector SVG curve -->
+                    <div class="testimonial-connector-wrap">
+                        <img src="images/testimonials/testimonial-shape.svg" alt="" class="testimonial-connector">
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-quote-icon">
+                            <svg width="32" height="24" viewBox="0 0 32 24" fill="none"><path d="M0 24V14.4C0 11.7 0.5 9.3 1.5 7.2C2.5 5.1 3.9 3.3 5.7 1.8C7.5 0.6 9.6 0 12 0L13.2 4.8C11.1 5.1 9.4 5.9 8.1 7.2C6.8 8.5 6.1 10 6 11.7H12V24H0ZM20 24V14.4C20 11.7 20.5 9.3 21.5 7.2C22.5 5.1 23.9 3.3 25.7 1.8C27.5 0.6 29.6 0 32 0L33.2 4.8C31.1 5.1 29.4 5.9 28.1 7.2C26.8 8.5 26.1 10 26 11.7H32V24H20Z" fill="#7eea57" opacity="0.2"/></svg>
+                        </div>
+                        <p class="testimonial-text">"It's great to see a logistics partner that shares our values for a cleaner planet."</p>
+                        <div class="testimonial-author">
+                            <img src="images/testimonials/testimonial-04.webp" alt="Olivia Brown" class="author-avatar">
+                            <div class="author-info">
+                                <strong>Olivia Brown</strong>
+                                <span>Enviro Lead</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CASE STUDIES ========== -->
+    <section class="case-studies" id="case-studies">
+        <div class="container">
+            <div class="section-header" data-animate>
+                <div class="section-header-row">
+                    <div>
+                        <h2 class="section-title">Case studies</h2>
+                        <p class="section-subtitle">Sustainability delivered: Impactful case studies from our clients</p>
+                    </div>
+                    <a href="#" class="btn btn-outline">See all case studies</a>
+                </div>
+            </div>
+            <div class="case-studies-grid" data-animate>
+                <a href="#" class="case-card">
+                    <div class="case-card-image">
+                        <img src="images/cases/case-01.avif" alt="EcoWare Industries">
+                    </div>
+                    <div class="case-card-body">
+                        <h4>EcoWare industries: Smart freight optimization</h4>
+                        <span class="case-btn">View detail &rarr;</span>
+                    </div>
+                </a>
+                <a href="#" class="case-card">
+                    <div class="case-card-image">
+                        <img src="images/cases/case-02.avif" alt="UrbanNest Home">
+                    </div>
+                    <div class="case-card-body">
+                        <h4>UrbanNest home: Greening last-mile delivery</h4>
+                        <span class="case-btn">View detail &rarr;</span>
+                    </div>
+                </a>
+                <a href="#" class="case-card">
+                    <div class="case-card-image">
+                        <img src="images/cases/case-03.avif" alt="GreenHarvest">
+                    </div>
+                    <div class="case-card-body">
+                        <h4>GreenHarvest foods: Reducing supply chain emissions</h4>
+                        <span class="case-btn">View detail &rarr;</span>
+                    </div>
+                </a>
+                <a href="#" class="case-card">
+                    <div class="case-card-image">
+                        <img src="images/cases/case-04.avif" alt="Waterway">
+                    </div>
+                    <div class="case-card-body">
+                        <h4>The restoration of a polluted waterway ecosystem</h4>
+                        <span class="case-btn">View detail &rarr;</span>
+                    </div>
+                </a>
+                <a href="#" class="case-card">
+                    <div class="case-card-image">
+                        <img src="images/cases/case-05.webp" alt="Zero Waste">
+                    </div>
+                    <div class="case-card-body">
+                        <h4>How one city achieved zero waste goals</h4>
+                        <span class="case-btn">View detail &rarr;</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CTA ========== -->
+    <section class="cta-section">
+        <div class="container" data-animate>
+            <div class="cta-card">
+                <h2 class="cta-title">Join the mission for smarter, cleaner transportation</h2>
+                <p class="cta-text">Let's work together to reduce emissions, optimize our operations, and make a positive impact on the planet.</p>
+                <a href="#contact" class="btn btn-primary btn-lg">Talk to our experts</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== BLOG ========== -->
+    <section class="blog" id="blog">
+        <div class="container">
+            <div class="section-header" data-animate>
+                <h2 class="section-title">Our blog</h2>
+                <p class="section-subtitle">Sustainability delivered: Impactful case studies from our clients</p>
+            </div>
+            <div class="blog-grid" data-animate>
+                <a href="#" class="blog-card">
+                    <div class="blog-card-image">
+                        <img src="images/blog/blog-01.webp" alt="Blog">
+                    </div>
+                    <div class="blog-card-body">
+                        <div class="blog-meta">
+                            <span class="blog-tag">Technology</span>
+                            <span class="blog-date">June 18, 2025</span>
+                        </div>
+                        <h4 class="blog-title">How eco-supply helped retail giant cut 60% of emissions</h4>
+                    </div>
+                </a>
+                <a href="#" class="blog-card">
+                    <div class="blog-card-image">
+                        <img src="images/blog/blog-02.webp" alt="Blog">
+                    </div>
+                    <div class="blog-card-body">
+                        <div class="blog-meta">
+                            <span class="blog-tag">Packaging</span>
+                            <span class="blog-date">June 18, 2025</span>
+                        </div>
+                        <h4 class="blog-title">The future of sustainable logistics: 5 trends to watch in 2025</h4>
+                    </div>
+                </a>
+                <a href="#" class="blog-card">
+                    <div class="blog-card-image">
+                        <img src="images/blog/blog-03.webp" alt="Blog">
+                    </div>
+                    <div class="blog-card-body">
+                        <div class="blog-meta">
+                            <span class="blog-tag">Green Technology</span>
+                            <span class="blog-date">June 18, 2025</span>
+                        </div>
+                        <h4 class="blog-title">How green logistics are changing the game</h4>
+                    </div>
+                </a>
+                <a href="#" class="blog-card">
+                    <div class="blog-card-image">
+                        <img src="images/blog/blog-04.webp" alt="Blog">
+                    </div>
+                    <div class="blog-card-body">
+                        <div class="blog-meta">
+                            <span class="blog-tag">Education</span>
+                            <span class="blog-date">June 18, 2025</span>
+                        </div>
+                        <h4 class="blog-title">Eco-friendly schools: Teaching sustainability by doing</h4>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-newsletter">
+                    <div class="footer-logo">
+                        <img src="images/icons/leaf-icon.svg" alt="" class="footer-leaf">
+                        <span class="logo-text">Mivora</span>
+                    </div>
+                    <h3>We believe real change starts deep within the supply chain.</h3>
+                    <p>Join our eco-supply community.</p>
+                    <form class="newsletter-form" onsubmit="event.preventDefault(); this.querySelector('button').textContent='Subscribed!'; this.querySelector('input').value='';">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Pages</h4>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#case-studies">Case Studies</a></li>
+                            <li><a href="#blog">Blog</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Address</h4>
+                        <p>123 Remote Work Avenue, San Francisco, CA 94105</p>
+                        <p>144 Creative Street, Suite 456, New York, NY 10001, USA</p>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Contact</h4>
+                        <p><a href="mailto:hello@example.com">hello@example.com</a></p>
+                        <p><a href="tel:+1234567890">+123 456 7890</a></p>
+                        <h4 class="mt-20">Social Media</h4>
+                        <div class="social-links">
+                            <a href="#"><img src="images/icons/facebook.svg" alt="Facebook"></a>
+                            <a href="#"><img src="images/icons/instagram.svg" alt="Instagram"></a>
+                            <a href="#"><img src="images/icons/dribbble.svg" alt="Dribbble"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Designed by Webestica, Powered by Webflow</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
