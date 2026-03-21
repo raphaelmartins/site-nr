@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | NR Empreendimentos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ========== HEADER ========== -->
+    <header class="header" id="header">
+        <div class="header-inner">
+            <a href="index.html" class="logo">
+                <img src="images/logo-nr.png" alt="NR Empreendimentos" class="logo-img" style="height: 50px;">
+            </a>
+            <nav class="nav-pill" id="navPill">
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link">Início</a></li>
+                    <li><a href="sobre.html" class="nav-link">Sobre</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="nav-link dropdown-toggle">Páginas
+                            <svg width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="index.html">Início</a></li>
+                            <li><a href="sobre.html">Sobre Nós</a></li>
+                            <li><a href="projetos.html">Projetos</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="contato.html">Contato</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="projetos.html" class="nav-link">Projetos</a></li>
+                    <li><a href="blog.html" class="nav-link active">Blog</a></li>
+                </ul>
+            </nav>
+            <a href="contato.html" class="btn btn-primary nav-cta">Fale Conosco</a>
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+            <div class="menu-overlay" id="menuOverlay"></div>
+        </div>
+    </header>
+
+    <!-- ========== PAGE BANNER ========== -->
+    <section class="page-banner">
+        <div class="container">
+            <p class="page-banner-tag">Conteúdo</p>
+            <h1>Blog & Notícias</h1>
+            <p>Artigos, legislação ambiental, dicas técnicas e novidades sobre engenharia e supressão vegetal para o seu projeto.</p>
+            <div class="breadcrumb">
+                <a href="index.html">Início</a>
+                <span class="sep">/</span>
+                <span class="current">Blog</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== BLOG ========== -->
+    <section class="blog-page">
+        <div class="container">
+
+            <!-- Artigo em destaque -->
+            <div class="blog-featured-card" data-animate>
+                <div class="blog-featured-image">
+                    <img src="images/blog/blog-01.webp" alt="Supressão vegetal legal">
+                </div>
+                <div class="blog-featured-content">
+                    <span class="blog-tag">Meio Ambiente</span>
+                    <h3>Supressão vegetal legal: entenda os riscos do desmatamento irregular</h3>
+                    <p>Atuar fora das normas ambientais pode resultar em multas milionárias, embargo da obra e até processos criminais. Saiba como a NR garante 100% de conformidade em cada projeto.</p>
+                    <span class="blog-date" style="color:var(--gray-lighter);font-size:13px;margin-bottom:20px;display:block;">18 de junho de 2025</span>
+                    <a href="#" class="btn btn-primary">Ler artigo completo</a>
+                </div>
+            </div>
+
+            <!-- Grid de artigos -->
+            <div class="section-header" data-animate style="margin-bottom:32px;">
+                <h2 class="section-title">Mais artigos</h2>
+            </div>
+            <div class="blog-full-grid" data-animate>
+
+                <a href="#" class="blog-page-card">
+                    <div class="blog-page-card-image">
+                        <img src="images/blog/blog-02.webp" alt="Legislação ambiental">
+                    </div>
+                    <div class="blog-page-card-body">
+                        <div class="blog-meta">
+                            <span class="blog-tag">Legislação</span>
+                            <span class="blog-date">18 de junho de 2025</span>
+                        </div>
+                        <h4>Lei de proteção da vegetação nativa: o que muda para empreendimentos em 2025</h4>
+                        <p>Novas exigências do Código Florestal e como se adequar antes de iniciar o licenciamento.</p>
+                    </div>
+                </a>
+
+                <a href="#" class="blog-page-card">
+                    <div class="blog-page-card-image">
+                        <img src="images/blog/blog-03.webp" alt="Maquinário pesado">
+                    </div>
+                    <div class="blog-page-card-body">
+                        <div class="blog-meta">
+                            <span class="blog-tag">Tecnologia</span>
+                            <span class="blog-date">18 de junho de 2025</span>
+                        </div>
+                        <h4>Maquinário pesado: como escolher o equipamento certo para cada tipo de obra</h4>
+                        <p>Tratores de esteira, motoniveladoras ou escavadeiras? Entenda qual equipamento se aplica ao seu projeto.</p>
+                    </div>
+                </a>
+
+                <a href="#" class="blog-page-card">
+                    <div class="blog-page-card-image">
+                        <img src="images/blog/blog-04.webp" alt="Recuperação de áreas degradadas">
+                    </div>
+                    <div class="blog-page-card-body">
+                        <div class="blog-meta">
+                            <span class="blog-tag">Engenharia</span>
+                            <span class="blog-date">18 de junho de 2025</span>
+                        </div>
+                        <h4>Recuperação de áreas degradadas: obrigações legais e oportunidades para empresas</h4>
+                        <p>Como transformar passivo ambiental em ativo estratégico com a recuperação de áreas degradadas.</p>
+                    </div>
+                </a>
+
+                <a href="#" class="blog-page-card">
+                    <div class="blog-page-card-image">
+                        <img src="images/blog/blog-01.webp" alt="Terraplanagem">
+                    </div>
+                    <div class="blog-page-card-body">
+                        <div class="blog-meta">
+                            <span class="blog-tag">Engenharia</span>
+                            <span class="blog-date">05 de maio de 2025</span>
+                        </div>
+                        <h4>Terraplanagem de precisão: como garantir o nivelamento ideal para a sua obra</h4>
+                        <p>Erros no preparo do terreno podem comprometer toda a obra. Veja os cuidados essenciais nessa etapa.</p>
+                    </div>
+                </a>
+
+                <a href="#" class="blog-page-card">
+                    <div class="blog-page-card-image">
+                        <img src="images/blog/blog-02.webp" alt="Licenciamento ambiental">
+                    </div>
+                    <div class="blog-page-card-body">
+                        <div class="blog-meta">
+                            <span class="blog-tag">Legislação</span>
+                            <span class="blog-date">22 de abril de 2025</span>
+                        </div>
+                        <h4>Licenciamento ambiental: passo a passo para projetos de agronegócio</h4>
+                        <p>Guia completo sobre as etapas do licenciamento junto ao IBAMA e órgãos estaduais para propriedades rurais.</p>
+                    </div>
+                </a>
+
+                <a href="#" class="blog-page-card">
+                    <div class="blog-page-card-image">
+                        <img src="images/blog/blog-03.webp" alt="NR-18 segurança">
+                    </div>
+                    <div class="blog-page-card-body">
+                        <div class="blog-meta">
+                            <span class="blog-tag">Segurança</span>
+                            <span class="blog-date">10 de março de 2025</span>
+                        </div>
+                        <h4>NR-18: por que a segurança no trabalho é prioridade em obras de supressão vegetal</h4>
+                        <p>Como a NR Empreendimentos implementa as normas de segurança e por que isso faz diferença na entrega dos projetos.</p>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CTA ========== -->
+    <section class="cta-section" style="margin-top:40px;">
+        <div class="container" data-animate>
+            <div class="cta-card">
+                <h2 class="cta-title">Precisa de assessoria para o seu projeto?</h2>
+                <p class="cta-text">Nossa equipe técnica está pronta para esclarecer dúvidas sobre licenciamento, supressão vegetal e legislação ambiental.</p>
+                <a href="contato.html" class="btn btn-primary btn-lg">Fale com um especialista</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-newsletter">
+                    <div class="footer-logo">
+                        <img src="images/logo-nr.png" alt="NR Empreendimentos" style="height:40px;filter:brightness(0) invert(1);">
+                    </div>
+                    <h3 style="margin-top:15px;">Compromisso com o meio ambiente e excelência em supressão vegetal.</h3>
+                    <p>Fique por dentro das novidades da NR.</p>
+                    <form class="newsletter-form" onsubmit="event.preventDefault();this.querySelector('button').textContent='Cadastrado!';this.querySelector('input').value='';">
+                        <input type="email" placeholder="Digite seu e-mail" required>
+                        <button type="submit" class="btn btn-primary">Assinar</button>
+                    </form>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Acesso Rápido</h4>
+                        <ul>
+                            <li><a href="index.html">Início</a></li>
+                            <li><a href="sobre.html">Sobre Nós</a></li>
+                            <li><a href="index.html#services">Serviços</a></li>
+                            <li><a href="projetos.html">Projetos</a></li>
+                            <li><a href="contato.html">Contato</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Sede</h4>
+                        <p>Av. Pedro Neiva de Santana, 3200<br>Parque das Palmeiras<br>Imperatriz - MA, 65910-000</p>
+                        <p style="margin-top:12px;"><a href="mailto:contato@nrempreendimentos.com">contato@nrempreendimentos.com</a></p>
+                        <p><a href="tel:+5599991287387">(99) 99128-7387</a></p>
+                        <p><a href="tel:+5599991818686">(99) 99181-8686</a></p>
+                        <p><a href="tel:+5599991558571">(99) 99155-8571</a></p>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Contatos Comerciais</h4>
+                        <p><strong>Dir. Nivaldo Rodrigues</strong><br><a href="tel:+5599991287387">(99) 99128-7387</a></p>
+                        <p style="margin-top:10px;"><strong>Dir. Comercial Claudio Stopassolli</strong><br><a href="tel:+5599991818686">(99) 99181-8686</a></p>
+                        <p style="margin-top:10px;"><strong>Ger. Adm Paulo Alencar</strong><br><a href="tel:+5599991558571">(99) 99155-8571</a></p>
+                        <h4 class="mt-20">Redes Sociais</h4>
+                        <div class="social-links">
+                            <a href="#"><img src="images/icons/facebook.svg" alt="Facebook"></a>
+                            <a href="#"><img src="images/icons/instagram.svg" alt="Instagram"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 NR Empreendimentos. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

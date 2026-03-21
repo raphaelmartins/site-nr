@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projetos | NR Empreendimentos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ========== HEADER ========== -->
+    <header class="header" id="header">
+        <div class="header-inner">
+            <a href="index.html" class="logo">
+                <img src="images/logo-nr.png" alt="NR Empreendimentos" class="logo-img" style="height: 50px;">
+            </a>
+            <nav class="nav-pill" id="navPill">
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link">Início</a></li>
+                    <li><a href="sobre.html" class="nav-link">Sobre</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="nav-link dropdown-toggle">Páginas
+                            <svg width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="index.html">Início</a></li>
+                            <li><a href="sobre.html">Sobre Nós</a></li>
+                            <li><a href="projetos.html">Projetos</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="contato.html">Contato</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="projetos.html" class="nav-link active">Projetos</a></li>
+                    <li><a href="blog.html" class="nav-link">Blog</a></li>
+                </ul>
+            </nav>
+            <a href="contato.html" class="btn btn-primary nav-cta">Fale Conosco</a>
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+            <div class="menu-overlay" id="menuOverlay"></div>
+        </div>
+    </header>
+
+    <!-- ========== PAGE BANNER ========== -->
+    <section class="page-banner">
+        <div class="container">
+            <p class="page-banner-tag">Portfólio</p>
+            <h1>Projetos entregues com<br>excelência e segurança</h1>
+            <p>Conheça os principais empreendimentos onde atuamos — de loteamentos a grandes obras de infraestrutura pública.</p>
+            <div class="breadcrumb">
+                <a href="index.html">Início</a>
+                <span class="sep">/</span>
+                <span class="current">Projetos</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== PROJETOS ========== -->
+    <section class="projects-page">
+        <div class="container">
+            <!-- Filtros -->
+            <div class="projects-filter" data-animate>
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="civil">Construção Civil</button>
+                <button class="filter-btn" data-filter="agro">Agronegócio</button>
+                <button class="filter-btn" data-filter="loteamento">Loteamentos</button>
+                <button class="filter-btn" data-filter="publico">Obras Públicas</button>
+                <button class="filter-btn" data-filter="mineracao">Mineração</button>
+            </div>
+
+            <!-- Grid de projetos -->
+            <div class="projects-full-grid" data-animate>
+
+                <div class="project-full-card" data-category="loteamento">
+                    <div class="project-full-image">
+                        <img src="images/cases/case-01.avif" alt="Loteamento Parque das Palmeiras">
+                    </div>
+                    <div class="project-full-body">
+                        <span class="project-full-tag">Loteamento</span>
+                        <h4>Loteamento Parque das Palmeiras</h4>
+                        <p>Preparo de 80 hectares para implantação de loteamento urbano, incluindo supressão vegetal, terraplanagem e destinação de resíduos.</p>
+                        <div class="project-full-meta">
+                            <span>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                                Imperatriz - MA
+                            </span>
+                            <span>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                                2023
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-full-card" data-category="publico">
+                    <div class="project-full-image">
+                        <img src="images/cases/case-02.avif" alt="Rodovia MA-006">
+                    </div>
+                    <div class="project-full-body">
+                        <span class="project-full-tag">Obra Pública</span>
+                        <h4>Rodovia MA-006: supressão vegetal em 12 km</h4>
+                        <p>Limpeza da faixa de domínio de 12 km de extensão com toda a documentação ambiental e aprovação dos órgãos competentes.</p>
+                        <div class="project-full-meta">
+                            <span>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                                Maranhão
+                            </span>
+                            <span>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                                2023
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-full-card" data-category="agro">
+                    <div class="project-full-image">
+                        <img src="images/cases/case-03.avif" alt="Fazenda Agro Norte">
+                    </div>
+                    <div class="project-full-body">
+                        <span class="project-full-tag">Agronegócio</span>
+                        <h4>Fazenda Agro Norte: preparo para plantio de soja</h4>
+                        <p>Supressão vegetal e preparo de solo em área de 1.200 hectares para cultura de soja, com licenciamento ambiental completo.</p>
+                        <div class="project-full-meta">
+                            <span>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                                Balsas - MA
+                            </span>
+                            <span>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                                2024
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-full-card" data-category="civil">
+                    <div class="project-full-image">
+                        <img src="images/cases/case-04.avif" alt="Distrito Industrial">
+                    </div>
+                    <div class="project-full-body">
+                        <span class="project-full-tag">Construção Civil</span>
+                        <h4>Distrito Industrial: terraplanagem de 40 ha</h4>
+                        <p>Limpeza total da área e terraplanagem para implantação de distrito industrial, incluindo compactação e nivelamento de alta precisão.</p>
+                        <div class="project-full-meta">
+                            <span>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                                Açailândia - MA
+                            </span>
+                            <span>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                                2024
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-full-card" data-category="loteamento">
+                    <div class="project-full-image">
+                        <img src="images/cases/case-05.webp" alt="Condomínio Verde Horizonte">
+                    </div>
+                    <div class="project-full-body">
+                        <span class="project-full-tag">Loteamento</span>
+                        <h4>Condomínio Verde Horizonte: supressão e urbanização</h4>
+                        <p>Projeto completo de supressão vegetal e urbanização de condomínio fechado, com implantação de infraestrutura viária interna.</p>
+                        <div class="project-full-meta">
+                            <span>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                                Imperatriz - MA
+                            </span>
+                            <span>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                                2025
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-full-card" data-category="mineracao">
+                    <div class="project-full-image">
+                        <img src="images/cases/case-big-05.avif" alt="Área de Mineração">
+                    </div>
+                    <div class="project-full-body">
+                        <span class="project-full-tag">Mineração</span>
+                        <h4>Área de Mineração: supressão e controle ambiental</h4>
+                        <p>Preparação de área de concessão mineral com supressão vegetal, implantação de acessos e recuperação de áreas de apoio operacional.</p>
+                        <div class="project-full-meta">
+                            <span>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                                Pará / MA
+                            </span>
+                            <span>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                                2025
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CTA ========== -->
+    <section class="cta-section">
+        <div class="container" data-animate>
+            <div class="cta-card">
+                <h2 class="cta-title">Tem um projeto em mente?</h2>
+                <p class="cta-text">Entre em contato com nossa equipe. Elaboramos a proposta ideal para o porte e a complexidade da sua obra.</p>
+                <a href="contato.html" class="btn btn-primary btn-lg">Solicitar orçamento</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-newsletter">
+                    <div class="footer-logo">
+                        <img src="images/logo-nr.png" alt="NR Empreendimentos" style="height:40px;filter:brightness(0) invert(1);">
+                    </div>
+                    <h3 style="margin-top:15px;">Compromisso com o meio ambiente e excelência em supressão vegetal.</h3>
+                    <p>Fique por dentro das novidades da NR.</p>
+                    <form class="newsletter-form" onsubmit="event.preventDefault();this.querySelector('button').textContent='Cadastrado!';this.querySelector('input').value='';">
+                        <input type="email" placeholder="Digite seu e-mail" required>
+                        <button type="submit" class="btn btn-primary">Assinar</button>
+                    </form>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Acesso Rápido</h4>
+                        <ul>
+                            <li><a href="index.html">Início</a></li>
+                            <li><a href="sobre.html">Sobre Nós</a></li>
+                            <li><a href="index.html#services">Serviços</a></li>
+                            <li><a href="projetos.html">Projetos</a></li>
+                            <li><a href="contato.html">Contato</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Sede</h4>
+                        <p>Av. Pedro Neiva de Santana, 3200<br>Parque das Palmeiras<br>Imperatriz - MA, 65910-000</p>
+                        <p style="margin-top:12px;"><a href="mailto:contato@nrempreendimentos.com">contato@nrempreendimentos.com</a></p>
+                        <p><a href="tel:+5599991287387">(99) 99128-7387</a></p>
+                        <p><a href="tel:+5599991818686">(99) 99181-8686</a></p>
+                        <p><a href="tel:+5599991558571">(99) 99155-8571</a></p>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Contatos Comerciais</h4>
+                        <p><strong>Dir. Nivaldo Rodrigues</strong><br><a href="tel:+5599991287387">(99) 99128-7387</a></p>
+                        <p style="margin-top:10px;"><strong>Dir. Comercial Claudio Stopassolli</strong><br><a href="tel:+5599991818686">(99) 99181-8686</a></p>
+                        <p style="margin-top:10px;"><strong>Ger. Adm Paulo Alencar</strong><br><a href="tel:+5599991558571">(99) 99155-8571</a></p>
+                        <h4 class="mt-20">Redes Sociais</h4>
+                        <div class="social-links">
+                            <a href="#"><img src="images/icons/facebook.svg" alt="Facebook"></a>
+                            <a href="#"><img src="images/icons/instagram.svg" alt="Instagram"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 NR Empreendimentos. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Filtro de projetos
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const projectCards = document.querySelectorAll('.project-full-card');
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                const filter = btn.dataset.filter;
+                projectCards.forEach(card => {
+                    if (filter === 'all' || card.dataset.category === filter) {
+                        card.style.display = 'flex';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
