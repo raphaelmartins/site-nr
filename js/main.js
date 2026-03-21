@@ -1,16 +1,32 @@
 // ========== MOBILE MENU ==========
 const hamburger = document.getElementById('hamburger');
 const navPill = document.getElementById('navPill');
+const menuOverlay = document.getElementById('menuOverlay');
 
-hamburger.addEventListener('click', () => {
+function toggleMenu() {
+    const isActive = navPill.classList.toggle('active');
     hamburger.classList.toggle('active');
-    navPill.classList.toggle('active');
-});
+    document.body.style.overflow = isActive ? 'hidden' : '';
+}
+
+function closeMenu() {
+    hamburger.classList.remove('active');
+    navPill.classList.remove('active');
+    document.body.style.overflow = '';
+}
+
+hamburger.addEventListener('click', toggleMenu);
+menuOverlay.addEventListener('click', closeMenu);
 
 navPill.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', () => {
-        hamburger.classList.remove('active');
-        navPill.classList.remove('active');
+    link.addEventListener('click', (e) => {
+        // Se for o link que abre o submenu, apenas alterna a classe active no <li> parente
+        if (link.classList.contains('dropdown-toggle')) {
+            e.preventDefault();
+            link.parentElement.classList.toggle('active');
+            return;
+        }
+        closeMenu();
     });
 });
 
