@@ -41,49 +41,52 @@ window.addEventListener('scroll', () => {
 const tabBtns = document.querySelectorAll('.tab-btn');
 const tabPanels = document.querySelectorAll('.tab-panel');
 
-tabBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-        const tabId = btn.dataset.tab;
-        tabBtns.forEach(b => b.classList.remove('active'));
-        tabPanels.forEach(p => p.classList.remove('active'));
-        btn.classList.add('active');
-        document.getElementById(`tab-${tabId}`).classList.add('active');
+if (tabBtns.length) {
+    tabBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const tabId = btn.dataset.tab;
+            tabBtns.forEach(b => b.classList.remove('active'));
+            tabPanels.forEach(p => p.classList.remove('active'));
+            btn.classList.add('active');
+            document.getElementById(`tab-${tabId}`).classList.add('active');
+        });
     });
-});
+}
 
 // ========== SERVICES CAROUSEL ==========
 const carousel = document.getElementById('servicesCarousel');
 const prevBtn = document.getElementById('servPrev');
 const nextBtn = document.getElementById('servNext');
-const cardWidth = 344; // card width + gap
+const cardWidth = 344;
 
-prevBtn.addEventListener('click', () => {
-    carousel.scrollBy({ left: -cardWidth, behavior: 'smooth' });
-});
+if (carousel && prevBtn && nextBtn) {
+    prevBtn.addEventListener('click', () => {
+        carousel.scrollBy({ left: -cardWidth, behavior: 'smooth' });
+    });
 
-nextBtn.addEventListener('click', () => {
-    carousel.scrollBy({ left: cardWidth, behavior: 'smooth' });
-});
-
-// Auto-scroll services
-let autoScrollInterval = setInterval(() => {
-    if (carousel.scrollLeft + carousel.clientWidth >= carousel.scrollWidth - 10) {
-        carousel.scrollTo({ left: 0, behavior: 'smooth' });
-    } else {
+    nextBtn.addEventListener('click', () => {
         carousel.scrollBy({ left: cardWidth, behavior: 'smooth' });
-    }
-}, 4000);
+    });
 
-carousel.addEventListener('mouseenter', () => clearInterval(autoScrollInterval));
-carousel.addEventListener('mouseleave', () => {
-    autoScrollInterval = setInterval(() => {
+    let autoScrollInterval = setInterval(() => {
         if (carousel.scrollLeft + carousel.clientWidth >= carousel.scrollWidth - 10) {
             carousel.scrollTo({ left: 0, behavior: 'smooth' });
         } else {
             carousel.scrollBy({ left: cardWidth, behavior: 'smooth' });
         }
     }, 4000);
-});
+
+    carousel.addEventListener('mouseenter', () => clearInterval(autoScrollInterval));
+    carousel.addEventListener('mouseleave', () => {
+        autoScrollInterval = setInterval(() => {
+            if (carousel.scrollLeft + carousel.clientWidth >= carousel.scrollWidth - 10) {
+                carousel.scrollTo({ left: 0, behavior: 'smooth' });
+            } else {
+                carousel.scrollBy({ left: cardWidth, behavior: 'smooth' });
+            }
+        }, 4000);
+    });
+}
 
 // ========== SCROLL ANIMATIONS ==========
 const animateElements = document.querySelectorAll('[data-animate]');
