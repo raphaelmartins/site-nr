@@ -1625,6 +1625,7 @@ img { max-width: 100%; display: block; }
 .breadcrumb {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 8px;
     margin-top: 24px;
     font-size: 13px;
