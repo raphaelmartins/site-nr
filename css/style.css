@@ -440,8 +440,8 @@ img { max-width: 100%; display: block; }
 }
 
 .clients-slide img {
-    height: 32px;
-    opacity: 0.4;
+    height: 56px;
+    opacity: 0.5;
     transition: opacity var(--transition);
 }
 
@@ -513,9 +513,18 @@ img { max-width: 100%; display: block; }
 
 .about-title {
     font-family: 'Instrument Sans', sans-serif;
-    font-size: 36px;
-    font-weight: 600;
-    line-height: 1.3;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.about-desc {
+    font-size: 17px;
+    color: var(--gray);
+    line-height: 1.7;
+    max-width: 620px;
+    margin: 0 auto;
 }
 
 .about-grid {
