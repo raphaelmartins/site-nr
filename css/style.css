@@ -440,7 +440,7 @@ img { max-width: 100%; display: block; }
 }
 
 .clients-slide img {
-    height: 56px;
+    height: 80px;
     opacity: 0.5;
     transition: opacity var(--transition);
 }
