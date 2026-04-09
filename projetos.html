@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projetos | NR Empreendimentos</title>
+    <title>Blog | NR Empreendimentos</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
@@ -21,7 +21,7 @@
                 <ul class="nav-menu" id="navMenu">
                     <li><a href="index.html" class="nav-link">Início</a></li>
                     <li><a href="sobre.html" class="nav-link">Sobre</a></li>
-                    <li><a href="blog.html" class="nav-link">Blog</a></li>
+                    <li><a href="blog.html" class="nav-link">Nossa Frota</a></li>
                     <li><a href="contato.html" class="nav-link">Contato</a></li>
                 </ul>
             </nav>
@@ -43,160 +43,90 @@
         </div>
         <div class="container hero-container">
             <div class="hero-content">
-                <h1 class="hero-title">Projetos entregues com<br>excelência e segurança</h1>
-                <p class="hero-subtitle">Conheça os principais empreendimentos onde atuamos — de loteamentos a grandes obras de infraestrutura pública.</p>
+                <h1 class="hero-title">Blog</h1>
+                <p class="hero-subtitle">Galeria de fotos dos nossos principais projetos executados em todo o Brasil.</p>
                 <div class="breadcrumb">
                     <a href="index.html">Início</a>
                     <span class="sep">/</span>
-                    <span class="current">Projetos</span>
+                    <span class="current">Blog</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ========== PROJETOS ========== -->
-    <section class="projects-page">
+    <!-- ========== BLOG / GALERIA DE PROJETOS ========== -->
+    <section class="projects-page" style="padding-top:60px;padding-bottom:60px;">
         <div class="container">
-            <!-- Filtros -->
-            <div class="projects-filter">
-                <button class="filter-btn active" data-filter="all">Todos</button>
-                <button class="filter-btn" data-filter="civil">Construção Civil</button>
-                <button class="filter-btn" data-filter="agro">Agronegócio</button>
-                <button class="filter-btn" data-filter="loteamento">Loteamentos</button>
-                <button class="filter-btn" data-filter="publico">Obras Públicas</button>
-                <button class="filter-btn" data-filter="mineracao">Mineração</button>
+
+            <!-- Alcoa Mineração -->
+            <div class="section-header" style="margin-bottom:24px;">
+                <h2 class="section-title">Alcoa Mineração</h2>
+            </div>
+            <div class="projects-full-grid" style="margin-bottom:60px;">
+                <!-- TODO: Substituir por fotos reais do material de apoio -->
+                <div class="project-full-card">
+                    <div class="project-full-image">
+                        <img src="images/foto-01.jpg" alt="Alcoa Mineração">
+                    </div>
+                </div>
+                <div class="project-full-card">
+                    <div class="project-full-image">
+                        <img src="images/foto-02.jpg" alt="Alcoa Mineração">
+                    </div>
+                </div>
+                <div class="project-full-card">
+                    <div class="project-full-image">
+                        <img src="images/foto-03.jpg" alt="Alcoa Mineração">
+                    </div>
+                </div>
             </div>
 
-            <!-- Grid de projetos -->
+            <!-- Hidrelétrica Estreito -->
+            <div class="section-header" style="margin-bottom:24px;">
+                <h2 class="section-title">Hidrelétrica Estreito</h2>
+            </div>
+            <div class="projects-full-grid" style="margin-bottom:60px;">
+                <!-- TODO: Substituir por fotos reais do material de apoio -->
+                <div class="project-full-card">
+                    <div class="project-full-image">
+                        <img src="images/foto-04.jpg" alt="Hidrelétrica Estreito">
+                    </div>
+                </div>
+                <div class="project-full-card">
+                    <div class="project-full-image">
+                        <img src="images/foto-01.jpg" alt="Hidrelétrica Estreito">
+                    </div>
+                </div>
+                <div class="project-full-card">
+                    <div class="project-full-image">
+                        <img src="images/foto-02.jpg" alt="Hidrelétrica Estreito">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hidrelétrica Sinop -->
+            <div class="section-header" style="margin-bottom:24px;">
+                <h2 class="section-title">Hidrelétrica Sinop</h2>
+            </div>
             <div class="projects-full-grid">
-
-                <div class="project-full-card" data-category="loteamento">
+                <!-- TODO: Substituir por fotos reais do material de apoio -->
+                <div class="project-full-card">
                     <div class="project-full-image">
-                        <img src="images/foto-01.jpg" alt="Loteamento Parque das Palmeiras">
-                    </div>
-                    <div class="project-full-body">
-                        <span class="project-full-tag">Loteamento</span>
-                        <h4>Loteamento Parque das Palmeiras</h4>
-                        <p>Preparo de 80 hectares para implantação de loteamento urbano, incluindo supressão vegetal, terraplanagem e destinação de resíduos.</p>
-                        <div class="project-full-meta">
-                            <span>
-                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                                Imperatriz - MA
-                            </span>
-                            <span>
-                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-                                2023
-                            </span>
-                        </div>
+                        <img src="images/foto-03.jpg" alt="Hidrelétrica Sinop">
                     </div>
                 </div>
-
-                <div class="project-full-card" data-category="publico">
+                <div class="project-full-card">
                     <div class="project-full-image">
-                        <img src="images/foto-02.jpg" alt="Rodovia MA-006">
-                    </div>
-                    <div class="project-full-body">
-                        <span class="project-full-tag">Obra Pública</span>
-                        <h4>Rodovia MA-006: supressão vegetal em 12 km</h4>
-                        <p>Limpeza da faixa de domínio de 12 km de extensão com toda a documentação ambiental e aprovação dos órgãos competentes.</p>
-                        <div class="project-full-meta">
-                            <span>
-                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                                Maranhão
-                            </span>
-                            <span>
-                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-                                2023
-                            </span>
-                        </div>
+                        <img src="images/foto-04.jpg" alt="Hidrelétrica Sinop">
                     </div>
                 </div>
-
-                <div class="project-full-card" data-category="agro">
+                <div class="project-full-card">
                     <div class="project-full-image">
-                        <img src="images/foto-03.jpg" alt="Fazenda Agro Norte">
-                    </div>
-                    <div class="project-full-body">
-                        <span class="project-full-tag">Agronegócio</span>
-                        <h4>Fazenda Agro Norte: preparo para plantio de soja</h4>
-                        <p>Supressão vegetal e preparo de solo em área de 1.200 hectares para cultura de soja, com licenciamento ambiental completo.</p>
-                        <div class="project-full-meta">
-                            <span>
-                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                                Balsas - MA
-                            </span>
-                            <span>
-                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-                                2024
-                            </span>
-                        </div>
+                        <img src="images/foto-01.jpg" alt="Hidrelétrica Sinop">
                     </div>
                 </div>
-
-                <div class="project-full-card" data-category="civil">
-                    <div class="project-full-image">
-                        <img src="images/foto-04.jpg" alt="Distrito Industrial">
-                    </div>
-                    <div class="project-full-body">
-                        <span class="project-full-tag">Construção Civil</span>
-                        <h4>Distrito Industrial: terraplanagem de 40 ha</h4>
-                        <p>Limpeza total da área e terraplanagem para implantação de distrito industrial, incluindo compactação e nivelamento de alta precisão.</p>
-                        <div class="project-full-meta">
-                            <span>
-                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                                Açailândia - MA
-                            </span>
-                            <span>
-                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-                                2024
-                            </span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-full-card" data-category="loteamento">
-                    <div class="project-full-image">
-                        <img src="images/foto-01.jpg" alt="Condomínio Verde Horizonte">
-                    </div>
-                    <div class="project-full-body">
-                        <span class="project-full-tag">Loteamento</span>
-                        <h4>Condomínio Verde Horizonte: supressão e urbanização</h4>
-                        <p>Projeto completo de supressão vegetal e urbanização de condomínio fechado, com implantação de infraestrutura viária interna.</p>
-                        <div class="project-full-meta">
-                            <span>
-                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                                Imperatriz - MA
-                            </span>
-                            <span>
-                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-                                2025
-                            </span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-full-card" data-category="mineracao">
-                    <div class="project-full-image">
-                        <img src="images/foto-03.jpg" alt="Área de Mineração">
-                    </div>
-                    <div class="project-full-body">
-                        <span class="project-full-tag">Mineração</span>
-                        <h4>Área de Mineração: supressão e controle ambiental</h4>
-                        <p>Preparação de área de concessão mineral com supressão vegetal, implantação de acessos e recuperação de áreas de apoio operacional.</p>
-                        <div class="project-full-meta">
-                            <span>
-                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                                Pará / MA
-                            </span>
-                            <span>
-                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-                                2025
-                            </span>
-                        </div>
-                    </div>
-                </div>
-
             </div>
+
         </div>
     </section>
 
@@ -233,7 +163,7 @@
                             <li><a href="index.html">Início</a></li>
                             <li><a href="sobre.html">Sobre Nós</a></li>
                             <li><a href="index.html#services">Serviços</a></li>
-                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="blog.html">Nossa Frota</a></li>
                             <li><a href="contato.html">Contato</a></li>
                         </ul>
                     </div>
@@ -265,24 +195,5 @@
     </footer>
 
     <script src="js/main.js"></script>
-    <script>
-        // Filtro de projetos
-        const filterBtns = document.querySelectorAll('.filter-btn');
-        const projectCards = document.querySelectorAll('.project-full-card');
-        filterBtns.forEach(btn => {
-            btn.addEventListener('click', () => {
-                filterBtns.forEach(b => b.classList.remove('active'));
-                btn.classList.add('active');
-                const filter = btn.dataset.filter;
-                projectCards.forEach(card => {
-                    if (filter === 'all' || card.dataset.category === filter) {
-                        card.style.display = 'flex';
-                    } else {
-                        card.style.display = 'none';
-                    }
-                });
-            });
-        });
-    </script>
 </body>
 </html>
