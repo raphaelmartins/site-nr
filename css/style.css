@@ -1292,66 +1292,291 @@ img { max-width: 100%; display: block; }
 /* ========== FROTA ========== */
 .frota {
     padding: 100px 0;
-    background: #fff;
+    background: #0c0f1a;
+}
+
+.frota .section-title {
+    color: #fff;
+}
+
+.frota .section-subtitle {
+    color: rgba(255,255,255,0.6);
 }
 
 .frota-grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 20px;
+    gap: 16px;
     margin-top: 48px;
 }
 
 .frota-card {
-    background: var(--light);
-    border: 1px solid #e8e8e8;
-    border-radius: 16px;
+    background: #151929;
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 14px;
     overflow: hidden;
-    transition: transform 0.3s, box-shadow 0.3s;
+    transition: transform 0.35s cubic-bezier(.22,.68,0,1), box-shadow 0.35s, border-color 0.35s;
+    position: relative;
+    text-decoration: none;
+    display: block;
 }
 
 .frota-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 12px 32px rgba(0,0,0,0.08);
+    transform: translateY(-6px);
+    box-shadow: 0 20px 48px rgba(0,0,0,0.35), 0 0 0 1px rgba(247,184,24,0.15);
+    border-color: rgba(247,184,24,0.2);
 }
 
 .frota-card-img {
-    height: 180px;
+    height: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px;
-    background: #fff;
+    padding: 24px 20px;
+    background: linear-gradient(145deg, #1c2137 0%, #111525 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.frota-card-img::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 40%;
+    background: linear-gradient(to top, #151929, transparent);
+    pointer-events: none;
 }
 
 .frota-card-img img {
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 90%;
+    max-height: 90%;
     object-fit: contain;
+    transition: transform 0.4s cubic-bezier(.22,.68,0,1);
+    filter: drop-shadow(0 8px 24px rgba(0,0,0,0.3));
+}
+
+.frota-card:hover .frota-card-img img {
+    transform: scale(1.06);
 }
 
 .frota-card-body {
-    padding: 16px 20px;
+    padding: 18px 20px 20px;
 }
 
 .frota-tag {
     display: inline-block;
-    font-size: 11px;
-    font-weight: 600;
+    font-size: 10px;
+    font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 0.5px;
-    color: var(--accent);
-    background: rgba(126, 234, 87, 0.1);
-    padding: 4px 10px;
-    border-radius: 20px;
+    letter-spacing: 0.8px;
+    color: var(--yellow);
+    padding: 0;
     margin-bottom: 8px;
 }
 
 .frota-card-body h4 {
     font-size: 15px;
+    font-weight: 700;
+    color: #fff;
+    margin: 0 0 12px;
+    line-height: 1.3;
+}
+
+.frota-card-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
     font-weight: 600;
-    color: var(--dark);
-    margin: 0;
+    color: rgba(255,255,255,0.4);
+    text-decoration: none;
+    transition: color 0.25s;
+}
+
+.frota-card-link svg {
+    transition: transform 0.25s;
+}
+
+.frota-card:hover .frota-card-link {
+    color: var(--yellow);
+}
+
+.frota-card:hover .frota-card-link svg {
+    transform: translateX(3px);
+}
+
+/* Frota page - larger grid */
+.frota-page .frota-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.frota-page .frota-card-img {
+    height: 260px;
+}
+
+.frota-page .frota-card-body {
+    padding: 20px 24px 24px;
+}
+
+.frota-page .frota-card-body h4 {
+    font-size: 18px;
+}
+
+.frota-page .frota-card-specs {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 14px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+.frota-card-spec {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.frota-card-spec-label {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: rgba(255,255,255,0.35);
+    font-weight: 600;
+}
+
+.frota-card-spec-value {
+    font-size: 13px;
+    font-weight: 700;
+    color: rgba(255,255,255,0.85);
+}
+
+/* Equipment detail page */
+.equip-hero {
+    padding: 140px 0 60px;
+    background: #0c0f1a;
+}
+
+.equip-hero .breadcrumb a,
+.equip-hero .breadcrumb .sep {
+    color: rgba(255,255,255,0.4);
+}
+
+.equip-hero .breadcrumb .current {
+    color: rgba(255,255,255,0.8);
+}
+
+.equip-detail {
+    background: #0c0f1a;
+    padding: 0 0 80px;
+}
+
+.equip-detail-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: start;
+}
+
+.equip-image-box {
+    background: linear-gradient(145deg, #1c2137 0%, #111525 100%);
+    border-radius: 20px;
+    padding: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 400px;
+    border: 1px solid rgba(255,255,255,0.06);
+}
+
+.equip-image-box img {
+    max-width: 100%;
+    max-height: 360px;
+    object-fit: contain;
+    filter: drop-shadow(0 16px 48px rgba(0,0,0,0.4));
+}
+
+.equip-info h1 {
+    font-family: 'Instrument Sans', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.2;
+}
+
+.equip-info .equip-category {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--yellow);
+    margin-bottom: 28px;
+    display: block;
+}
+
+.equip-info .equip-desc {
+    font-size: 15px;
+    line-height: 1.8;
+    color: rgba(255,255,255,0.6);
+    margin-bottom: 32px;
+}
+
+.equip-specs-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
+    background: rgba(255,255,255,0.06);
+    border-radius: 14px;
+    overflow: hidden;
+    margin-bottom: 36px;
+}
+
+.equip-spec-item {
+    background: #151929;
+    padding: 20px 24px;
+}
+
+.equip-spec-item .spec-label {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    color: rgba(255,255,255,0.35);
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.equip-spec-item .spec-value {
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.equip-actions {
+    display: flex;
+    gap: 12px;
+}
+
+.equip-actions .btn {
+    flex: 1;
+    text-align: center;
+}
+
+/* Related equipment */
+.equip-related {
+    padding: 80px 0;
+    background: #0c0f1a;
+    border-top: 1px solid rgba(255,255,255,0.06);
+}
+
+.equip-related .section-title {
+    color: #fff;
+}
+
+.equip-related .section-subtitle {
+    color: rgba(255,255,255,0.5);
 }
 
 /* ========== TESTIMONIALS ========== */
@@ -2223,6 +2448,9 @@ img { max-width: 100%; display: block; }
     .mission-grid { grid-template-columns: 1fr 1fr; }
     .team-grid { grid-template-columns: 1fr 1fr; }
     .frota-grid { grid-template-columns: repeat(3, 1fr); }
+    .frota-page .frota-grid { grid-template-columns: repeat(2, 1fr); }
+    .equip-detail-grid { grid-template-columns: 1fr; gap: 40px; }
+    .equip-image-box { min-height: 300px; }
     .contact-page-grid { grid-template-columns: 1fr; }
     .blog-featured-card { grid-template-columns: 1fr; }
     .blog-featured-image { height: 260px; }
@@ -2235,6 +2463,11 @@ img { max-width: 100%; display: block; }
     .blog-full-grid { grid-template-columns: 1fr; }
     .projects-full-grid { grid-template-columns: 1fr; }
     .frota-grid { grid-template-columns: repeat(2, 1fr); }
+    .frota-page .frota-grid { grid-template-columns: 1fr; }
+    .equip-detail-grid { grid-template-columns: 1fr; }
+    .equip-info h1 { font-size: 28px; }
+    .equip-specs-grid { grid-template-columns: 1fr 1fr; }
+    .equip-actions { flex-direction: column; }
     .form-row { grid-template-columns: 1fr; }
     .contact-form-card { padding: 24px; }
 }
